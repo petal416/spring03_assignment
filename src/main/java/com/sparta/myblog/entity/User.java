@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @Getter // get 함수를 일괄적으로 만들어줍니다.
 @NoArgsConstructor // 기본 생성자를 만들어줍니다.
-@Entity // DB 테이블 역할을 합니다.
+@Entity(name = "users") // DB 테이블 역할을 합니다. @Entity를 @Entity(name = "users")로 변경하여 테이블 이름을 USERS로 설정
 public class User {
 
     // ID가 자동으로 생성 및 증가합니다.
