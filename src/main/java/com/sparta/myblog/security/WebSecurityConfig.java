@@ -12,6 +12,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity // 스프링 Security 지원을 가능하게 함
 public class WebSecurityConfig {
 
+    // 암호화 알고리즘
     @Bean
     public BCryptPasswordEncoder encodePassword() {
         return new BCryptPasswordEncoder();
